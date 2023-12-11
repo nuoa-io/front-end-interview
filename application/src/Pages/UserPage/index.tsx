@@ -14,6 +14,7 @@ import CreateUserModal from "./CreateUserModal";
 import { CachePolicies, useFetch } from "use-http";
 import { isEmpty } from "lodash";
 import { UserType } from "./user.type";
+import ButtonDeleteUser from "./ButtonDeleteUser";
 
 export default function UserPage() {
   const {
@@ -21,6 +22,8 @@ export default function UserPage() {
     data: users,
     get: refresh,
   } = useFetch("/api/users", { cachePolicy: CachePolicies.NO_CACHE }, []);
+
+  console.log(loading, users);
 
   return (
     <div>
@@ -61,7 +64,10 @@ export default function UserPage() {
                       <TableCell>{row.job}</TableCell>
                       <TableCell>
                         <Button>Edit</Button>
-                        <Button>Delete</Button>
+                        <ButtonDeleteUser
+                          id={row.id}
+                          callbackSuccess={refresh}
+                        />
                       </TableCell>
                     </TableRow>
                   ))}

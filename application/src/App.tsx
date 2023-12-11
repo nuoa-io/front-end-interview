@@ -2,6 +2,7 @@ import "./App.css";
 import { Container, CssBaseline } from "@mui/material";
 import UserPage from "./Pages/UserPage";
 import ProviderWrapper from "./Provider";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (

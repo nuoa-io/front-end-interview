@@ -42,3 +42,15 @@ export interface UserType {
   career: CareerEnum;
   job: JobEnum | null;
 }
+
+export type ErrorType = {
+  name?: string;
+  age?: string;
+  job?: string;
+  career?: string;
+  common?: string;
+};
+
+export type CallbackSuccess = {
+  (): void;
+};
