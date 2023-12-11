@@ -84,4 +84,5 @@ job:
   - `yarn dev`
 
  ## Mock UI
- ![Blank diagram](https://github.com/nuoa-io/front-end-interview/assets/134991093/0c5f427e-8cc7-4c39-aad3-68cff75e483a)
+ ![Blank diagram](https://github.com/nuoa-io/front-end-interview/assets/134991093/80541434-f050-4566-ab91-3297b7de35c6)
+
